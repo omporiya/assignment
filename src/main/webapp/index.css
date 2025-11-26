@@ -1,0 +1,143 @@
+/* =============================
+   Pokémon Search UI - CSS File
+   ============================= */
+
+:root {
+  --primary: #ffcb05;
+  --dark: #2d2d2d;
+  --light: #ffffff;
+  --muted: #6b7280;
+  --card-bg: linear-gradient(135deg, #f9f9ff, #eef3ff);
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f6ff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+/* ------ SEARCH BOX ------ */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #d7d8dd;
+  font-size: 16px;
+  outline: none;
+  background: #fafbff;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #000;
+  font-weight: 700;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ------ CARD DESIGN ------ */
+.card {
+  display: flex;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  gap: 20px;
+  align-items: center;
+}
+
+.image-section img {
+  width: 170px;
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.15));
+}
+
+.info-section {
+  text-align: left;
+}
+
+.info-section h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.tag {
+  background: #fff4bd;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #7a6400;
+  margin-bottom: 10px;
+}
+
+.details p {
+  margin: 3px 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ------ STATS ------ */
+.stats {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.stat-box {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-box span {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.stat-box b {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+}
+
+/* Note text */
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--muted);
+}
